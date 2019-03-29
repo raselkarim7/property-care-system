@@ -14,7 +14,8 @@ class CreatePropertyOwnerMapsTable extends Migration
     public function up()
     {
         Schema::create('property_owner_maps', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->integer('p_id');
+            $table->integer('owner_id'); // owner_is is user_id
             $table->timestamps();
         });
     }

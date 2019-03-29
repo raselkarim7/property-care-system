@@ -8,5 +8,5 @@ class Thana extends Model
 {
     protected $primaryKey = 'thana_id';
 
-    protected $fillable = ['thana_id', 'name', 'district_id'];
+    protected $fillable = [ 'name', 'district_id'];
 }

@@ -8,5 +8,5 @@ class Location extends Model
 {
     protected $primaryKey = 'location_id';
 
-    protected $fillable = ['location_id', 'name', 'district_id', 'thana_id', ];
+    protected $fillable = [ 'name', 'district_id', 'thana_id', ];
 }

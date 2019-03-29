@@ -8,5 +8,5 @@ class District extends Model
 {
     protected $primaryKey = 'district_id';
 
-    protected $fillable = ['district_id', 'name'];
+    protected $fillable = ['name'];
 }

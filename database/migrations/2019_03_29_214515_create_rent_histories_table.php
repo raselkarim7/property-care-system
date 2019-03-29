@@ -14,7 +14,11 @@ class CreateRentHistoriesTable extends Migration
     public function up()
     {
         Schema::create('rent_histories', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('rent_history_id');
+            $table->integer('p_id');
+            $table->integer('rent_details_id');
+            $table->integer('manager_id');
+            $table->integer('tenant_id');
             $table->timestamps();
         });
     }

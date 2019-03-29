@@ -14,7 +14,11 @@ class CreateRentsTable extends Migration
     public function up()
     {
         Schema::create('rents', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->integer('p_id');
+            $table->integer('rent_details_id');
+            $table->integer('status'); // Enum Values
+            $table->integer('manager_id'); //user id
+            $table->integer('tenant_id'); //user id
             $table->timestamps();
         });
     }

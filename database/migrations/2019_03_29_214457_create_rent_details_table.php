@@ -14,7 +14,17 @@ class CreateRentDetailsTable extends Migration
     public function up()
     {
         Schema::create('rent_details', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('rent_details_id');
+            $table->float('monthly_rent',20,5);
+            $table->float('service_charge', 15,5);
+            $table->text('agreement');
+            $table->string('agreement_file_url', 100);
+            $table->date('initial_date');
+            $table->date('expire_date');
+
+            $table->float('advanced_amount',20, 5);
+            $table->integer('months_toadjust_advamount');
+            $table->float('advanced_amount_permonth',20,5);
             $table->timestamps();
         });
     }

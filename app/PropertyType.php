@@ -8,5 +8,5 @@ class PropertyType extends Model
 {
     protected $primaryKey = 'ptype_id';
 
-    protected $fillable = ['ptype_id', 'name', 'description'];
+    protected $fillable = [ 'name', 'description'];
 }

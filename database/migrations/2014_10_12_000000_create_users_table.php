@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('image_url', 100)->nullable();
             $table->string('email',100)->nullable();
             $table->boolean('is_active')->default(1);
-            $table->string('password',50);
+            $table->string('password',150);
             $table->rememberToken();
             $table->timestamps();
         });
